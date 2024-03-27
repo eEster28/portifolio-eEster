@@ -1,0 +1,38 @@
+:root{
+    --background: #100E0E;
+
+    --color-title: #FFFFFF;
+    --color-second-title: #7B51FF;
+    --color-sub-title: #907AD4;
+    --color-button-cv: #100E0E;
+    --color-logo: #7B51FF;
+
+    --backgroud-menu: #7B51FF;
+    --color-menu:#FFFFFF ;
+ 
+    --font-family: 'Questrial', sans-serif;
+}
+
+[data-theme='dark']{
+    --background: #D6D0EA;
+
+    --color-title: #100E0E;
+    --color-second-title: #7B51FF;
+    --color-sub-title: #907AD4;
+    --color-button-cv: #D6D0EA;
+    --color-logo: #100E0E;
+
+    --backgroud-menu: #7B51FF;
+    --color-menu:#FFFFFF ;
+
+    --font-family:'Questrial', sans-serif;
+}
+
+body{
+    line-height: 1;
+    display: block;
+    height: 100vh;
+
+    background-color: var(--background);  
+}
+ 
