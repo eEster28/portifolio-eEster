@@ -5,6 +5,7 @@ import { HeaderContext } from "../../providers/HeaderContext"
 import { SectionTitle } from "../../components/Sections/SectionTitle"
 import { SectionPhoto } from "../../components/Sections/SectionPhoto"
 import { SectionAboutMe } from "../../components/Sections/SectionAboutMe"
+import { SectionTechs } from "../../components/Sections/SectionTechs"
 
 export const DeshboardPage = () => {
     const { theme } = useContext(HeaderContext)
@@ -18,6 +19,7 @@ export const DeshboardPage = () => {
                     <SectionPhoto />
                 </section>
                 <SectionAboutMe />
+                <SectionTechs/>
             </main>
         </body>
     )
