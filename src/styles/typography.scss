@@ -50,4 +50,9 @@
             color: var(--color-button);  
         }
     }
+
+    &.paragraph{
+        font-size: 1.875rem;
+        font-weight: 500;
+    }
 }
