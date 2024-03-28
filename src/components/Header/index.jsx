@@ -22,12 +22,10 @@ export const Header = () => {
                 onClick={switchTheme}>
                     
                     {theme === "dark" ?
-        
                         <img src={LigthMode} alt="Ligth Mode" className={Style.img_theme} />:
                         <img src={DarkMode} alt="Dark Mode" 
                         className={Style.img_theme} /> 
                     }
-
                 </button>
             </div>
 
@@ -41,10 +39,10 @@ export const Header = () => {
 
             <div className={menu_class}>
                 <div className="conteiner_menu">
-                    <button className="button_menu">Sobre mim</button>
-                    <button className="button_menu">Tecnologias</button>
-                    <button className="button_menu">Projetos</button>
-                    <button className="button_menu">Contatos</button>
+                    <button className="button_menu title text">Sobre mim</button>
+                    <button className="button_menu title text">Tecnologias</button>
+                    <button className="button_menu title text">Projetos</button>
+                    <button className="button_menu title text">Contatos</button>
                 </div>
             </div>
         </header>

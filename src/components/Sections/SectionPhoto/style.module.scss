@@ -1,0 +1,10 @@
+.img {
+    width: 450px;
+    height: 400px;
+    cursor: pointer;
+
+    &:hover {
+        width: 455px;
+        height: 410px;
+    }
+}

@@ -1,6 +1,9 @@
 :root{
     --background: #100E0E;
 
+    --background-button: #D6D0EA;
+    --color-button: #100E0E;
+
     --color-title: #FFFFFF;
     --color-second-title: #7B51FF;
     --color-sub-title: #907AD4;
@@ -16,6 +19,9 @@
 [data-theme='dark']{
     --background: #D6D0EA;
 
+    --background-button: #100E0E;
+    --color-button: #D6D0EA;
+
     --color-title: #100E0E;
     --color-second-title: #7B51FF;
     --color-sub-title: #907AD4;
@@ -23,7 +29,7 @@
     --color-logo: #100E0E;
 
     --backgroud-menu: #7B51FF;
-    --color-menu:#FFFFFF ;
+    --color-menu:#100E0E;
 
     --font-family:'Questrial', sans-serif;
 }
@@ -35,4 +41,10 @@ body{
 
     background-color: var(--background);  
 }
+
+main{
+    display: flex;
+    margin-top: 100px;
  
+    justify-content: space-around;
+}
