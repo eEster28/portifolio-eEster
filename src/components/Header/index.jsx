@@ -4,6 +4,7 @@ import { HeaderContext } from "../../providers/HeaderContext"
 import DarkMode from "../../assets/dark.jpg"
 import LigthMode from "../../assets/ligth.jpg"
 
+
 export const Header = () => {
     const { 
         theme, 
@@ -29,7 +30,7 @@ export const Header = () => {
                 </button>
             </div>
 
-            <h1 className="title">Portifólio</h1>
+           <a href="#home"> <h1 className="title">Portifólio</h1></a>
 
             <div className="burger-menu" onClick={openMenu}>
                 <div className={burger_class} ></div>
@@ -39,10 +40,10 @@ export const Header = () => {
 
             <div className={menu_class}>
                 <div className="conteiner_menu">
-                    <button className="button_menu title text">Sobre mim</button>
-                    <button className="button_menu title text">Tecnologias</button>
-                    <button className="button_menu title text">Projetos</button>
-                    <button className="button_menu title text">Contatos</button>
+                    <a className="button_menu title text" href="#sobremim">Sobre mim</a>
+                    <a className="button_menu title text" href="#techs">Tecnologias</a>
+                    <a className="button_menu title text" href="#projects">Projetos</a>
+                    <a className="button_menu title text" href="#contacts">Contatos</a>
                 </div>
             </div>
         </header>

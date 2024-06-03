@@ -1,6 +1,11 @@
-.conteiner{
+.conteiner {
     height: 50px;
     padding: 25px;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--background);
 
     display: flex;
     justify-content: space-around;
@@ -8,13 +13,19 @@
 
     border-bottom: 1px solid var(--color-second-title);
     box-shadow: 0 0 15px 15px var(--color-second-title);
+
+    @media (max-width: 425px) {
+        justify-content: center;
+        gap: 40px;
+        padding: 20px 25px 15px 0px;
+    }
 }
 
-.button_clear{
+.button_clear {
     border: none;
     background-color: transparent;
 }
 
-.img_theme{
+.img_theme {
     height: 1.8rem;
 }

@@ -8,15 +8,34 @@
         font-size: 4.5rem;
         font-weight: 500;
 
+        &.project{
+            font-size: 2.3rem;
+            font-weight: 500;
+        }
+        
         &.sub {
             color: var(--color-second-title);
+
+            &.a{
+                font-size: 1.2rem;
+            }
+            &.span{
+                font-size: 1.8rem;
+            }
+        }
+        @media (max-width: 768px) {
+            font-size: 3.5rem;
         }
     }
 
     &.sub-title {
         font-size: 1.5rem;
         font-weight: 400;
-        color: var(--color-sub-title)
+        color: var(--color-sub-title);
+
+        &.a {
+            font-size: 1.2rem
+        }
     }
 
     &.text {
@@ -54,5 +73,10 @@
     &.paragraph{
         font-size: 1.875rem;
         font-weight: 500;
+    }
+
+    &.span{
+        font-size: 1.2rem;
+        font-weight: 500; 
     }
 }

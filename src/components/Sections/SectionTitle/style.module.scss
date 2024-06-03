@@ -19,9 +19,17 @@
         border-color: var(--color-second-title);
         border-radius: 15px;
 
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-left: 8px;
+        }
+
         &:hover{
             background-color: var(--background-button);
             
         }
+    }
+    @media (max-width: 768px) {
+        text-align: center;
     }
 }
