@@ -28,4 +28,8 @@
 
 .img_theme {
     height: 1.8rem;
+
+    @media (max-width: 376px) {
+        height: 1.5rem;
+    }
 }

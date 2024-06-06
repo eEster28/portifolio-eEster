@@ -10,6 +10,9 @@
     >h2 {
         margin-bottom: 4rem;
     }
+    @media (max-width: 376px) {
+        margin-top: 840px;
+    }
 
     @media (min-width: 425px) {
         margin: 750px 50px 0px 70px;

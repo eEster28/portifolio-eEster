@@ -1,4 +1,4 @@
-.burger-menu{
+.burger-menu {
     height: 51%;
     width: 2em;
     display: flex;
@@ -9,24 +9,24 @@
     z-index: 100;
 }
 
-.conteiner_menu{
+.conteiner_menu {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 30%;
     gap: 3rem;
     right: 30%;
-   
+
     align-items: center;
     padding: 15px;
 
     @media (max-width: 768px) {
-      right: 45%;
+        right: 45%;
     }
-    
+
 }
 
-.button_menu{
+.button_menu {
     border: none;
     background-color: transparent;
     font-size: 20px;
@@ -35,10 +35,14 @@
 .burger-bar {
     width: 3em;
     height: 0.2em;
- 
+
     background-color: var(--color-menu);
     border-radius: 0.5em;
 
+    @media (max-width: 376px) {
+        width: 1.5em;
+        
+    }
 }
 
 .menu {
@@ -48,14 +52,14 @@
     position: absolute;
     top: 0;
     right: 0;
-   
+
     justify-content: center;
     align-items: center;
 
-    
+
     @media (max-width: 768px) {
         width: 100%;
-      
+
     }
 }
 
@@ -70,17 +74,17 @@
 
 /* ----- animations--------- */
 /* clicked */
-.burger-bar.clicked:nth-child(1){
+.burger-bar.clicked:nth-child(1) {
     transform: rotate(40deg) translate(0.1rem, 0.6rem);
     transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(2){
+.burger-bar.clicked:nth-child(2) {
     transform: scale(0.1);
     transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(3){
+.burger-bar.clicked:nth-child(3) {
     transform: rotate(135deg) translate(-0.5em, 1em);
     transition: ease-out 0.5s;
 }
