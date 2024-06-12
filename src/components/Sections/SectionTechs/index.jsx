@@ -1,12 +1,17 @@
 import Styles from "./style.module.scss"
 import { techs, techsBlack } from "../../../database/techDatabase"
 import { CardTech } from "./CardTechs"
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import { HeaderContext } from "../../../providers/HeaderContext"
 
 export const SectionTechs = () => {
     const { theme } = useContext(HeaderContext)
+    const [cloned, setCloned] = useState(false);
 
+    useEffect(() => {
+      setCloned(true); 
+    }, []);
+  
     return (
         <section className={Styles.conteiner} id="techs">
             <h2 className="title two sub">Tecnologias</h2>
@@ -32,6 +37,9 @@ export const SectionTechs = () => {
                         })
                     }
                 </ul>
+                {
+                    cloned && (<ul className={Styles.card}></ul>)
+                }
             </div>
 
         </section>

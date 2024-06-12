@@ -23,8 +23,8 @@ export const DeshboardPage = () => {
                 <SectionAboutMe />
                 <SectionTechs/>
                 <SectionProjects/>
-                <Footer/>
             </main>
+            <Footer/>
         </body>
     )
 }
