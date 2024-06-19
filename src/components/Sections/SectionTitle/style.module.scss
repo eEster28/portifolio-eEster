@@ -33,3 +33,23 @@
         text-align: center;
     }
 }
+
+.msg{
+    border-right: 5px solid blue;
+    white-space: nowrap ;
+    overflow: hidden;
+
+    animation:mark .5s step-end infinite, write 3s steps(22, end) infinite;
+}
+
+@keyframes mark {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes write {
+    0% {
+        width: 0;
+    }
+}

@@ -1,8 +1,6 @@
 import { createContext, useState } from "react"
 import useLocalStorage from "use-local-storage"
 
- 
-
 export const HeaderContext = createContext({})
 
 export const HeaderProvider = ({ children }) => {

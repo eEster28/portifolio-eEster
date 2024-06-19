@@ -40,10 +40,11 @@ export const Header = () => {
 
             <div className={menu_class}>
                 <div className="conteiner_menu">
-                    <a className="button_menu title text" href="#sobremim">Sobre mim</a>
-                    <a className="button_menu title text" href="#techs">Tecnologias</a>
-                    <a className="button_menu title text" href="#projects">Projetos</a>
-                    <a className="button_menu title text" href="#contacts">Contatos</a>
+                    <a className="button_menu title text" href="#sobremim" onClick={openMenu} >Sobre mim</a>
+                    <a className="button_menu title text" href="#techs" onClick={openMenu}>Tecnologias</a>
+                    <a className="button_menu title text" href="#projects" onClick={openMenu}>Projetos</a>
+                    <a className="button_menu title text" href="#contacts" onClick={openMenu}
+                    >Contatos</a>
                 </div>
             </div>
         </header>
