@@ -6,7 +6,7 @@
     height: 100vh;
     padding: 0px 50px 0px 50px;
     margin-top: 200%;
-
+    overflow: hidden;
     >h2 {
         margin-bottom: 4rem;
     }
@@ -46,6 +46,7 @@
         gap: 1rem;
         margin-left: 35px;
         flex-shrink: 0;
+        transition: transform 1s;
 
         >img {
             margin-left: 5px;
@@ -65,63 +66,120 @@
         width: 250px;
 
     }
-}
-@media (max-width: 768px) {
-@keyframes slide {
-    from {
-        transform: translateX(0);
+
+    @media (max-width: 768px) {
+       
+        display: flex;
+        flex-direction: row;
+        // width: calc(20px * 18);
+        max-width: 100%;
+        flex-wrap: nowrap;
+        animation: scroll 35s linear infinite;
+   
+
+        &:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+        
+        >li:hover{
+            transform: translateZ(20px);
+        }
+        // >li{
+        //     height: 20;
+        // height: 100px;
+
+        // }
+
+        // &::before,
+        // ::after{
+        //     background:  linear-gradient(to right, rgb(242, 237, 237) 0%, rgb(28, 18, 18) 100%);
+        //     content: '';
+        //     height: 100%;
+        //     position: absolute;
+        //     width: 15%;
+        //     z-index: 2;
+        // }
+        // &::before{
+        //     left: 0;
+        //     top:0;
+        // }
+
+        // &::after{
+        //     right: 0;
+        //     top: 0;
+        //     transform: rotate(180deg);
+        // }
+
+
+        // @keyframes slide {
+        //     from {
+        //         transform: translateX(0);
+        //     }
+
+        //     to {
+        //         transform: translateX(-100%);
+        //     }
+        // }
+
+        // .scrolle {
+        //     // overflow: hidden;
+        //     padding: 60px 0;
+        //     background: white;
+        //     white-space: nowrap;
+        //     position: relative;
+        // }
+
+        // .scroller:before,
+        // .scroller:after {
+        //     position: absolute;
+        //     top: 100px;
+        //     width: 250px;
+        //     // height: 100%;
+        //     content: "";
+        //     // z-index: 2;
+        // }
+
+        // .scroller:before {
+        //     left: 0;
+        //     background: linear-gradient(to left, rgba(149, 7, 7, 0), rgb(250, 6, 6));
+        // }
+
+        // .scroller:after {
+        //     right: 0;
+        //     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(216, 40, 40));
+        // }
+
+        // .scroller:hover .card {
+        //     animation-play-state: paused;
+        // }
+
+        // .card {
+        //     // display: inline-block;
+        //     animation: 35s slide infinite linear;
+
+        //     flex-shrink: 0;
+        //     flex-wrap: nowrap;
+        //     max-width: 200px;
+        //     overflow-x: scroll;
+
+        // }
+
+        // // .card img {
+        // //     height: 50px;
+        // //     margin: 0 40px;
+        // // }
     }
-
-    to {
-        transform: translateX(-100%);
-    }
 }
-
-.scrolle {
-    // overflow: hidden;
-    padding: 60px 0;
-    background: white;
-    white-space: nowrap;
-    position: relative;
-}
-
-.scroller:before,
-.scroller:after {
-    position: absolute;
-    top: 100px;
-    width: 250px;
-    // height: 100%;
-    content: "";
-    // z-index: 2;
-}
-
-.scroller:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(149, 7, 7, 0), rgb(250, 6, 6));
-}
-
-.scroller:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(216, 40, 40));
-}
-
-.scroller:hover .card {
-    animation-play-state: paused;
-}
-
-.card {
-    // display: inline-block;
-    animation: 35s slide infinite linear;
-    
-    flex-shrink: 0;
-    flex-wrap: nowrap;
-    max-width: 200px;
-    overflow-x: scroll;
-    
-}
-
-// .card img {
-//     height: 50px;
-//     margin: 0 40px;
+// .scroller{
+//     display: flex;
+//     margin: 750px 50px 0px 70px;
 // }
-}

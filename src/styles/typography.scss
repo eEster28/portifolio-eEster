@@ -41,12 +41,32 @@
     &.text {
         font-size: 1.5rem;
         font-weight: 400;
+        position: relative;
 
-        &:hover {
-            border-bottom: 3px solid var(--color-title);
-            font-weight: 600;
-        
+        &::after{
+            content: " ";
+            width: 0%;
+            height: 3px;
+            border-radius: 10px;
+            background-color: var(--color-title);;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s ease-in-out;
         }
+
+        &:hover::after {
+          width: 100%;
+          
+        }
+
+        &:hover{
+            font-size: 2rem;
+            font-weight: 600;
+            transition: 0.5s ease-in-out;
+        }
+        
+        // }
         // &:before {
         //     content: "";
         //     position: absolute;

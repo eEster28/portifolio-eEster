@@ -37,6 +37,28 @@ export const SectionTechs = () => {
                         })
                     }
                 </ul>
+                {/* <ul className={Styles.card}>
+                    {theme === "dark" ?
+                        techs.map((technology) => {
+                            const { img, name } = technology
+                            return (
+                                <li key={crypto.randomUUID()}>
+                                    <CardTech name={name} img={img} />
+                                </li>
+                            )
+                        })
+                        :
+                        techsBlack.map((technology) => {
+                            const { img, name } = technology
+                            return (
+                                <li key={crypto.randomUUID()}>
+                                    <CardTech name={name} img={img} />
+                                </li>
+                            )
+                        })
+                    }
+                </ul> */}
+          
                 {
                     cloned && (<ul className={Styles.card}></ul>)
                 }
@@ -45,3 +67,24 @@ export const SectionTechs = () => {
         </section>
     )
 }
+
+/*
+
+<div  "slider"> 
+    <div "slide-track">
+
+        <div "slide">
+            <img/>
+        </div>
+
+        <div "slide">
+            <img/>
+        </div>
+
+          <div "slide">
+            <img/>
+        </div>
+    </div>
+
+</div>
+*/
