@@ -4,77 +4,64 @@
     align-items: center;
 
     height: 100vh;
-    padding: 0px 50px 0px 50px;
-    margin-top: 200%;
+    padding: 0rem 3.125rem 0rem 3.125rem;
+    margin-top: 100%;
     overflow: hidden;
+
     >h2 {
         margin-bottom: 4rem;
     }
 
-    @media (max-width: 376px) {
-        margin-top: 840px;
+    @media (max-width: 23.5rem) {
+        margin-top: 52.5rem;
     }
 
-    @media (min-width: 425px) {
-        margin: 750px 50px 0px 70px;
+    @media (min-width: 26.5625rem) {
+        margin: 46.875rem 3.125rem 0rem 4.375rem;
     }
 
-    @media (min-width: 768px) {
-        margin: 180px 50px 0px 80px;
-        // height: auto;  
+    @media (min-width: 48rem) {
+        margin: 11.25rem 3.125rem 0rem 5rem;
     }
 
-    @media (min-width: 1024px) {
-        margin: 0px 150px 0px 150px;
-    }
 }
+
 
 .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     width: 100%;
 
     >li {
-        width: 250px;
-        height: 100px;
-        border-radius: 15px;
-        border: 3px solid var(--color-second-title);
+        width: 15.625rem;
+        height: 6.25rem;
+        border-radius: 0.9375rem;
+        border: 0.1875rem solid var(--color-second-title);
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-left: 35px;
+        margin-left: 2.1875rem;
         flex-shrink: 0;
         transition: transform 1s;
 
         >img {
-            margin-left: 5px;
+            margin-left: 0.3125rem;
         }
     }
 
-    // @media (max-width: 768px) {
-    //     padding: 1rem;
-
-    //     flex-wrap: nowrap;
-    //     max-width: 340px;
-    //     overflow: auto;
-
-    // }
-
-    @media (max-width: 425px) {
-        width: 250px;
+    @media (max-width: 26.5625rem) {
+        width: 15.625rem;
 
     }
 
-    @media (max-width: 768px) {
-       
-        display: flex;
+    @media (max-width: 56.25rem) {
+    
         flex-direction: row;
-        // width: calc(20px * 18);
         max-width: 100%;
         flex-wrap: nowrap;
-        animation: scroll 35s linear infinite;
+        animation: scroll 20s linear infinite;
    
 
         &:hover{
@@ -86,100 +73,34 @@
                 transform: translateX(0);
             }
             100% {
-                transform: translateX(calc(-250px * 9));
+                transform: translateX(calc(-15.625rem * 9));
             }
         }
         
         >li:hover{
-            transform: translateZ(20px);
+            transform: translateZ(1.25rem);
         }
-        // >li{
-        //     height: 20;
-        // height: 100px;
-
-        // }
-
-        // &::before,
-        // ::after{
-        //     background:  linear-gradient(to right, rgb(242, 237, 237) 0%, rgb(28, 18, 18) 100%);
-        //     content: '';
-        //     height: 100%;
-        //     position: absolute;
-        //     width: 15%;
-        //     z-index: 2;
-        // }
-        // &::before{
-        //     left: 0;
-        //     top:0;
-        // }
-
-        // &::after{
-        //     right: 0;
-        //     top: 0;
-        //     transform: rotate(180deg);
-        // }
-
-
-        // @keyframes slide {
-        //     from {
-        //         transform: translateX(0);
-        //     }
-
-        //     to {
-        //         transform: translateX(-100%);
-        //     }
-        // }
-
-        // .scrolle {
-        //     // overflow: hidden;
-        //     padding: 60px 0;
-        //     background: white;
-        //     white-space: nowrap;
-        //     position: relative;
-        // }
-
-        // .scroller:before,
-        // .scroller:after {
-        //     position: absolute;
-        //     top: 100px;
-        //     width: 250px;
-        //     // height: 100%;
-        //     content: "";
-        //     // z-index: 2;
-        // }
-
-        // .scroller:before {
-        //     left: 0;
-        //     background: linear-gradient(to left, rgba(149, 7, 7, 0), rgb(250, 6, 6));
-        // }
-
-        // .scroller:after {
-        //     right: 0;
-        //     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(216, 40, 40));
-        // }
-
-        // .scroller:hover .card {
-        //     animation-play-state: paused;
-        // }
-
-        // .card {
-        //     // display: inline-block;
-        //     animation: 35s slide infinite linear;
-
-        //     flex-shrink: 0;
-        //     flex-wrap: nowrap;
-        //     max-width: 200px;
-        //     overflow-x: scroll;
-
-        // }
-
-        // // .card img {
-        // //     height: 50px;
-        // //     margin: 0 40px;
-        // // }
+        
     }
 }
-// .scroller{
-//     display: flex;
-//     margin: 750px 50px 0px 70px;
-// }
+
+.scroller{
+    display: flex;
+}
+
+.card_clone{
+    display: none;
+
+    @media (max-width: 56.25rem) {
+        display: flex;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+    @media (max-width: 26.5625rem) {
+        display: none;
+    }
+}
+
+

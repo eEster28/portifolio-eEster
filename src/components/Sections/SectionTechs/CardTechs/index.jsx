@@ -1,5 +1,3 @@
-import Styles from "./style.module.scss"
-
 export const CardTech = ({ name, img }) => {
     return(
         <>

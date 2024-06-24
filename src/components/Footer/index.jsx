@@ -8,7 +8,6 @@ import { useContext } from "react"
 import { HeaderContext } from "../../providers/HeaderContext"
 
 
-
 export const Footer = () => {
     const { theme } = useContext(HeaderContext)
 
