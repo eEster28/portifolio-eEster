@@ -1,6 +1,5 @@
 .burger-menu {
     height: 51%;
-    width: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +19,18 @@
     align-items: center;
     padding: 15px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
+        right: 30%;
+    }
+
+    @media (min-width: 768px) {
         right: 45%;
     }
     
-    @media (max-width: 768px) {
-        right: 45%;
+    @media (min-width: 1000px) {
+        right: 30%;
     }
+    
 
     @media (min-width: 2000px) {
         right: 35%;
@@ -47,9 +51,8 @@
     background-color: var(--color-menu);
     border-radius: 0.5em;
 
-    @media (max-width: 376px) {
-        width: 1.5em;
-        
+    @media (max-width: 768px) {
+        width: 1.5em; 
     }
 }
 
