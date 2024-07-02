@@ -10,7 +10,7 @@ export const CardProjectsFront = ({ name, site, link }) => {
     return (
         <>
             <div>
-                <span className="title paragraph">{name}</span>
+                <span className="title paragraph card">{name}</span>
                 {
                     theme === "dark" ?
                         <img src={gitBlack} alt={`Imagem do icone git`} /> :
@@ -30,14 +30,13 @@ export const CardProjectsBack = ({ name, link }) => {
     return (
         <>
             <div>
-                <span className="title paragraph">{name}</span>
+                <span className="title paragraph card">{name}</span>
                 {
                     theme === "dark" ?
                         <img src={gitBlack} alt={`Imagem do icone git`} /> :
                         <img src={gitWhite} alt={`Imagem do icone git`} />
                 }
             </div>
-
             <a className="title two sub a" target="_blank" href={link}>Codigo GitHub</a>
         </>
     )

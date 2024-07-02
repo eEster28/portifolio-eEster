@@ -1,4 +1,4 @@
-:root{
+:root {
     --background: #100E0E;
 
     --background-button: #D6D0EA;
@@ -11,12 +11,12 @@
     --color-logo: #7B51FF;
 
     --backgroud-menu: #7B51FF;
-    --color-menu:#FFFFFF ;
- 
+    --color-menu: #FFFFFF;
+
     --font-family: 'Questrial', sans-serif;
 }
 
-[data-theme='dark']{
+[data-theme='dark'] {
     --background: #D6D0EA;
 
     --background-button: #100E0E;
@@ -29,15 +29,15 @@
     --color-logo: #100E0E;
 
     --backgroud-menu: #7B51FF;
-    --color-menu:#100E0E;
+    --color-menu: #100E0E;
 
-    --font-family:'Questrial', sans-serif;
+    --font-family: 'Questrial', sans-serif;
 }
 
-body{
-    background-color: var(--background);  
+body {
+    background-color: var(--background);
 }
 
-main{
+main {
     margin-top: 100px;
 }

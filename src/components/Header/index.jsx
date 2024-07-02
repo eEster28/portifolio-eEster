@@ -6,31 +6,32 @@ import LigthMode from "../../assets/ligth.jpg"
 
 
 export const Header = () => {
-    const { 
-        theme, 
-        switchTheme, 
-        openMenu, 
-        burger_class, 
-        menu_class } = 
+    const {
+        theme,
+        switchTheme,
+        openMenu,
+        burger_class,
+        menu_class
+    } =
         useContext(HeaderContext)
 
     return (
         <header className={Style.conteiner}>
 
             <div>
-                <button 
-                className={Style.button_clear} 
-                onClick={switchTheme}>
-                    
+                <button
+                    className={Style.button_clear}
+                    onClick={switchTheme}>
+
                     {theme === "dark" ?
-                        <img src={LigthMode} alt="Ligth Mode" className={Style.img_theme} />:
-                        <img src={DarkMode} alt="Dark Mode" 
-                        className={Style.img_theme} /> 
+                        <img src={LigthMode} alt="Ligth Mode" className={Style.img_theme} /> :
+                        <img src={DarkMode} alt="Dark Mode"
+                            className={Style.img_theme} />
                     }
                 </button>
             </div>
 
-           <a href="#home"> <h1 className="title">Portifólio</h1></a>
+            <a href="#home"> <h1 className="title">Portifólio</h1></a>
 
             <div className="burger-menu" onClick={openMenu}>
                 <div className={burger_class} ></div>

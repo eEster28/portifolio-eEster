@@ -2,15 +2,9 @@ import Style from "./style.module.scss"
 import Git from "../../assets/footer/git.png"
 import Email from "../../assets/footer/email.png"
 import Linkedin from "../../assets/footer/linkedim.png"
-import copyWhite from "../../assets/copyright/white.png"
-import copyBlack from "../../assets/copyright/black.png"
-import { useContext } from "react"
-import { HeaderContext } from "../../providers/HeaderContext"
 
 
 export const Footer = () => {
-    const { theme } = useContext(HeaderContext)
-
     return (
         <footer className={Style.conteiner} id="contacts">
             <div className={Style.conteiner_div}>
@@ -34,11 +28,7 @@ export const Footer = () => {
                 </div>
 
             </div>
-            <p className="title span"> {theme === "dark" ? 
-            <img src={copyBlack} alt="copyright" />
-            :
-            <img src={copyWhite} alt="copyright" />  
-            } Todos os direitos reservados - Ester Moura Silva </p>
+            <p className="title span">&copy; Todos os direitos reservados a Ester Moura Silva - 2024 </p>
         </footer>
     )
 }

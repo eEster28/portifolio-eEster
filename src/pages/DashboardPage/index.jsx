@@ -9,6 +9,7 @@ import { SectionTechs } from "../../components/Sections/SectionTechs"
 import { SectionProjects } from "../../components/Sections/SectionProjects"
 import { Footer } from "../../components/Footer"
 
+
 export const DeshboardPage = () => {
     const { theme } = useContext(HeaderContext)
 
@@ -21,10 +22,10 @@ export const DeshboardPage = () => {
                     <SectionPhoto />
                 </section>
                 <SectionAboutMe />
-                <SectionTechs/>
-                <SectionProjects/>
+                <SectionTechs />
+                <SectionProjects />
             </main>
-            <Footer/>
+            <Footer />
         </body>
     )
 }

@@ -1,5 +1,6 @@
 import Styles from "./style.module.scss"
 
+
 export const SectionAboutMe = () => {
     return(
         <section className={Styles.conteiner} id="sobremim">

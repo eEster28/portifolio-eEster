@@ -8,21 +8,27 @@
         font-size: 4.5rem;
         font-weight: 500;
 
-        &.project{
+        &.project {
             font-size: 2.3rem;
             font-weight: 500;
         }
-        
+
         &.sub {
             color: var(--color-second-title);
 
-            &.a{
+            &.a {
                 font-size: 1.2rem;
+
+                @media (max-width: 425px) {
+                    font-size: 0.9rem;
+                }
             }
-            &.span{
+
+            &.span {
                 font-size: 1.8rem;
             }
         }
+
         @media (max-width: 500px) {
             font-size: 2.5rem;
         }
@@ -34,8 +40,14 @@
         color: var(--color-sub-title);
 
         &.a {
-            font-size: 1.2rem
+            font-size: 1.2rem;
+
+            @media (max-width: 425px) {
+                font-size: 0.9rem;
+            }
+
         }
+
         @media (max-width: 500px) {
             font-size: 1rem;
         }
@@ -46,12 +58,13 @@
         font-weight: 400;
         position: relative;
 
-        &::after{
+        &::after {
             content: " ";
             width: 0%;
             height: 3px;
             border-radius: 10px;
-            background-color: var(--color-title);;
+            background-color: var(--color-title);
+            ;
             position: absolute;
             left: 0;
             bottom: 0;
@@ -59,13 +72,13 @@
         }
 
         &:hover::after {
-          width: 100%;
-          
+            width: 100%;
+
         }
 
-        &:hover{
-            font-size: 2rem;
-            font-weight: 600;
+        &:hover {
+            font-size: 1.6rem;
+            font-weight: 500;
             transition: 0.5s ease-in-out;
         }
     }
@@ -74,22 +87,32 @@
         font-size: 1rem;
         font-weight: 400;
         text-decoration: none;
-        &:hover{
-            color: var(--color-button);  
+
+        &:hover {
+            color: var(--color-button);
         }
     }
 
-    &.paragraph{
+    &.paragraph {
         font-size: 1.875rem;
+        font-weight: 500;
+
+
+    }
+
+    &.span {
+        font-size: 1.2rem;
         font-weight: 500;
     }
 
-    &.span{
-        font-size: 1.2rem;
-        font-weight: 500; 
+    @media (max-width: 500px) {
+        font-size: 1.8rem;
     }
 
-    @media (max-width: 500px) {
-       font-size: 1.8rem;
+    &.card {
+
+        @media (max-width: 425px) {
+            font-size: 1.1rem;
+        }
     }
 }

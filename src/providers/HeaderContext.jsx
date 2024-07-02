@@ -11,7 +11,7 @@ export const HeaderProvider = ({ children }) => {
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
     const switchTheme = () => {
-        const newTheme = theme === 'dark'? 'light':'dark';
+        const newTheme = theme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme)
     }
 
@@ -28,9 +28,9 @@ export const HeaderProvider = ({ children }) => {
     }
 
     return (
-        <HeaderContext.Provider value={{  
-            switchTheme, 
-            theme, 
+        <HeaderContext.Provider value={{
+            switchTheme,
+            theme,
             openMenu,
             burger_class,
             menu_class

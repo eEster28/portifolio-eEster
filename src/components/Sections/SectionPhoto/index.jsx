@@ -1,6 +1,7 @@
 import Style from "./style.module.scss"
 import ImgEster from "../../../assets/foto-eEster.png"
 
+
 export const SectionPhoto = () => {
     return (
         <section>

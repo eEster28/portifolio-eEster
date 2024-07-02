@@ -7,6 +7,9 @@ import sqlIcon from "../assets/techs/postgresql.svg"
 import reactIcon from "../assets/techs/react.svg"
 import sassIcon from "../assets/techs/sass.svg"
 import typescriptIcon from "../assets/techs/typescript.svg"
+import pythonIcon from "../assets/techs/python.svg"
+import djangoIcon from "../assets/techs/django.svg"
+
 
 //Black mode
 import javascriptIconBlack from "../assets/techs/javascriptBlack.svg"
@@ -18,8 +21,11 @@ import sqlIconBlack from "../assets/techs/postgresqlBlack.svg"
 import reactIconBlack from "../assets/techs/reactBlack.svg"
 import sassIconBlack from "../assets/techs/sassBlack.svg"
 import typescriptIconBlack from "../assets/techs/typescriptBlack.svg"
+import pythonIconBlack from "../assets/techs/pythonBlack.svg"
+import djangoIconBlack from "../assets/techs/djangoBlack.svg"
 
 
+//djangoBlack.svg
 export const techs = [
     {
         name: "JavaScript",
@@ -56,6 +62,14 @@ export const techs = [
     {
         name: "TypeScript",
         img: typescriptIcon
+    },
+    {
+        name: "Python",
+        img: pythonIcon
+    },
+    {
+        name: "Django",
+        img: djangoIcon
     }
 ]
 
@@ -95,5 +109,13 @@ export const techsBlack = [
     {
         name: "TypeScript",
         img: typescriptIconBlack
+    },
+    {
+        name: "Python",
+        img: pythonIconBlack
+    },
+    {
+        name: "Django",
+        img: djangoIconBlack
     }
 ]
